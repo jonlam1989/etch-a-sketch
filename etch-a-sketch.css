@@ -60,3 +60,9 @@ body {
 	border: 1px solid black;
 	box-shadow: 0 0 10px black, 0 0 12px rgb(204, 214, 57);
 }
+
+.s2-grid td {
+	box-sizing: border-box;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}

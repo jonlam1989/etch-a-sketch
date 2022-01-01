@@ -31,9 +31,25 @@ body {
 /* ---------------------------------------------------------- */
 
 .s1-controls {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
 	width: 20vw;
 	height: 30vw;
 	border: 2px solid black;
+}
+
+.s1-controls button {
+	font-size: 1.2em;
+	font-family: 'Gloria Hallelujah', cursive;
+	width: 90%;
+	background-color: rgb(204, 214, 57);
+	box-shadow: 0 0 2px black, 0 0 4px rgb(204, 214, 57);
+}
+
+.s1-controls button:hover {
+	cursor: pointer;
 }
 
 /* ---------------------------------------------------------- */
@@ -41,5 +57,6 @@ body {
 .s2-grid {
 	width: 40vw;
 	height: 40vw;
-	border: 2px solid black;
+	border: 1px solid black;
+	box-shadow: 0 0 10px black, 0 0 12px rgb(204, 214, 57);
 }

@@ -25,7 +25,7 @@ body {
 	justify-content: space-evenly;
 	align-items: center;
 	gap: 10em;
-	margin: 4em;
+	margin: 2em 0 1em;
 }
 
 /* ---------------------------------------------------------- */
@@ -55,8 +55,8 @@ body {
 /* ---------------------------------------------------------- */
 
 .s2-grid {
-	width: 40vw;
-	height: 40vw;
+	width: 35em;
+	height: 35em;
 	border: 1px solid black;
 	box-shadow: 0 0 10px black, 0 0 12px rgb(204, 214, 57);
 }
@@ -65,4 +65,30 @@ body {
 	box-sizing: border-box;
 	border-right: 1px solid black;
 	border-bottom: 1px solid black;
+}
+
+/* ---------------------------------------------------------- */
+
+.active {
+	color: rgb(232, 233, 227);
+	text-shadow: 0 0 10px black;
+}
+
+/* ---------------------------------------------------------- */
+
+@media (max-width: 925px) {
+	.game-container {
+		flex-direction: column-reverse;
+		gap: 1em;
+	}
+	.s1-controls {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		gap: 1em;
+		padding: 1em;
+		width: 80vw;
+		height: 8vw;
+		border: none;
+	}
 }

@@ -1,27 +1,31 @@
 let grid = document.querySelector('.s2-grid')
-let buttons = document.querySelectorAll('button')
+let buttons = document.querySelectorAll('button:not(:last-child)')
+let defaultBtn = document.querySelector('button:first-child')
 
 const gridWidth = grid.clientWidth
-const gridHeight = grid.clientHeight
 
-let row = 16
-let col = 16
-let cellWidth = gridWidth / col
-let cellHeight = gridHeight / row
+let gridSize = 16
+let cellSize = gridWidth / gridSize
 
-for (let i = 0; i < row; i++) {
+//create html-grid
+for (let i = 0; i < gridSize; i++) {
     let gridRow = document.createElement('tr')
-    for (let j = 0; j < col; j++) {
+
+    for (let j = 0; j < gridSize; j++) {
         let gridCell = document.createElement('td')
-        gridCell.style.width = `${cellWidth}px`
-        gridCell.style.height = `${cellHeight}px`    
+        gridCell.style.width = `${cellSize}px`
+        gridCell.style.height = `${cellSize}px`    
         gridRow.append(gridCell)
     }
+
     grid.append(gridRow)
 }
 
+//shows which button is active
+defaultBtn.classList.add('active')
 for (let btn of buttons) {
-    btn.addEventListener('click', ()=>{
-        console.log('clicked')
+    btn.addEventListener('click', function(){
+        buttons.forEach((b)=>b.classList.remove('active'))
+        btn.classList.add('active')
     })
 }

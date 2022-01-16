@@ -5,6 +5,15 @@ let clearBtn = document.querySelector('button:last-child')
 
 const gridWidth = grid.clientWidth
 
+window.addEventListener('resize', function() {
+    if (gridWidth === 400) {
+        window.location.reload()
+    }
+    if (gridWidth === 560) {
+        window.location.reload()
+    }
+})
+
 let gridSize = 16
 let cellSize = gridWidth / gridSize
 let gameMode = ''

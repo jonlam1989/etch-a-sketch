@@ -25,7 +25,7 @@ body {
 	justify-content: space-evenly;
 	align-items: center;
 	gap: 10em;
-	margin: 1em 0;
+	margin: 2em 0;
 }
 
 /* ---------------------------------------------------------- */
@@ -76,7 +76,7 @@ body {
 
 /* ---------------------------------------------------------- */
 
-@media (max-width: 925px) {
+@media (max-width: 950px) {
 	.game-container {
 		flex-direction: column-reverse;
 		gap: 1em;
@@ -93,8 +93,28 @@ body {
 	}
 }
 
-@media (max-width: 575px) {
+@media (max-width: 600px) {
 	.header {
 		font-size: 3em;
+	}
+
+	.s2-grid {
+		width: 25em;
+		height: 25em;
+	}
+}
+
+@media (max-width: 425px) {
+	.header {
+		font-size: 2em;
+	}
+
+	.s1-controls button {
+		font-size: 1em;
+	}
+
+	.s2-grid {
+		width: 20em;
+		height: 20em;
 	}
 }

@@ -7,10 +7,14 @@ const gridWidth = grid.clientWidth
 
 window.addEventListener('resize', function() {
     if (gridWidth === 400) {
-        window.location.reload()
+        setTimeout(function() {
+            window.location.reload(true)
+        })
     }
     if (gridWidth === 560) {
-        window.location.reload()
+        setTimeout(function() {
+            location.reload(true)
+        })
     }
 })
 
